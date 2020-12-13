@@ -1,0 +1,76 @@
+{%extends "base.html"%}
+{%block content%}
+<center>
+<div class="w-50 mt-5">
+    <form action="{{url_for('predict')}}" method='GET'>
+
+        <div class='row my-5'>
+        
+        <div class="form-group col">
+          <label for="exampleFormControlSelect1" class="text-white font-weight-bold lead">Select Team 1</label>
+          <select class="form-control" id="exampleFormControlSelect1" name='list1' required>
+              <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+  			  <option value ="Mumbai Indians">Mumbai Indians</option>
+			  <option value ="Gujarat Lions">Gujarat Lions</option>
+			  <option value ="Pune Warriors">Pune Warriors</option>
+			  <option value ="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+			  <option value ="Kolkata Knight Riders">Kolkata Knight Riders</option>
+			  <option value ="Delhi Capitals">Delhi Capitals</option>
+			  <option value ="Kings XI Punjab">Kings XI Punjab</option>
+			  <option value ="Chennai Super Kings">Chennai Super Kings</option>
+			  <option value ="Kochi Tuskers Kerala">Kochi Tuskers Kerala</option>
+			  <option value ="Rajasthan Royals">Rajasthan Royals</option>
+          </select>
+        </div>
+        
+        <div class="form-group col">
+            <label for="exampleFormControlSelect2" class="text-white font-weight-bold lead">Select Team 2</label>
+            <select class="form-control" id="exampleFormControlSelect2" name='list2' required>
+              <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+  			  <option value ="Mumbai Indians">Mumbai Indians</option>
+			  <option value ="Gujarat Lions">Gujarat Lions</option>
+			  <option value ="Pune Warriors">Pune Warriors</option>
+			  <option value ="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+			  <option value ="Kolkata Knight Riders">Kolkata Knight Riders</option>
+			  <option value ="Delhi Capitals">Delhi Capitals</option>
+			  <option value ="Kings XI Punjab">Kings XI Punjab</option>
+			  <option value ="Chennai Super Kings">Chennai Super Kings</option>
+			  <option value ="Kochi Tuskers Kerala">Kochi Tuskers Kerala</option>
+			  <option value ="Rajasthan Royals">Rajasthan Royals</option>
+            </select>
+          </div>
+
+        </div>
+
+        
+
+          <div class="form-group my-5">
+            <label for="exampleFormControlSelect3" class="text-white font-weight-bold lead">Toss Winner</label>
+            <select class="form-control" id="exampleFormControlSelect3" name='toss_winner' required>
+                <option value="0">Team 1</option>
+                <option value="1">Team 2</option>
+            </select>
+        </div>
+
+            
+          <div class="form-group my-6">
+            <label for="exampleFormControlSelect4" class="text-white font-weight-bold lead">Batting First</label>
+            <select class="form-control" id="exampleFormControlSelect3" name='Batting' required>
+                <option value="0">Team 1</option>
+                <option value="1">Team 2</option>
+            </select>
+        </div>
+
+              <br>
+
+            <input type="submit" name='btn' class='btn btn-primary btn-lg' value='Predict'>
+
+            
+          
+        
+      </form>
+             <p class='footer-description'>Made with ❤️ by Akhil Chandra.</p>
+    </div></center>
+
+
+{%endblock%}
